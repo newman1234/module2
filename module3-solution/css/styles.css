@@ -1,0 +1,169 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  padding: 0px;
+  margin: auto; 
+}
+
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #FFF;
+  font-family: 'Oxygen', sans-serif;
+  padding-top: 70px;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  /*padding-top: 25px;*/
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin: 0px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+li {
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #ffffe0;
+}
+
+#collapsable-nav {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.navbar {
+  margin: 0px;
+}
+/* END HEADER */
+
+
+/** BODY **/
+#Chicken, #Beef, #Sushi{
+  background-color: #A0A0A0;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.dish {
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu {
+  text-align: center;
+}
+
+p {
+  padding: 10px;
+}
+/* END BODY */
+
+
+/********** Large devices only **********/
+/*@media (min-width: 1200px) {
+
+}*/
+
+/********** Medium devices only **********/
+@media (min-width: 992px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+}
